@@ -223,3 +223,133 @@ tr:nth-child(even) td { background: rgba(0, 0, 0, .12); }
 .get-col p { margin: 8px 0 0; font-size: 13px; }
 .get-col .tiny { font-size: 11px; color: var(--text-dim); }
 .welcome .blurb { margin: 8px 0 22px; font-size: 13px; }
+
+/* ═══ The meta layer: the whole site lives in a 2010 browser window on a desktop ═══
+   Our own art throughout (no operating-system or browser logos): the wallpaper is a shot of The Remembering, the start
+   orb holds the Reinforced Iron door, the browser icon is the Stand-In. */
+html, body { height: 100%; }
+body { overflow: hidden; background: #111 url("shots/door-walked-out.jpg") center / cover no-repeat; image-rendering: auto; }
+.desktop { position: fixed; inset: 0; display: flex; flex-direction: column; }
+.icons { position: absolute; left: 14px; top: 14px; display: flex; flex-direction: column; gap: 14px; z-index: 1; }
+.dicon { width: 84px; display: flex; flex-direction: column; align-items: center; gap: 4px; text-decoration: none; padding: 4px 2px; border: 1px solid transparent; border-radius: 3px; }
+.dicon:hover { background: rgba(170, 200, 240, .3); border-color: rgba(200, 225, 255, .6); }
+.dicon img { width: 48px; height: 48px; filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, .6)); }
+.dicon span { font: 12px "Segoe UI", Tahoma, Arial, sans-serif; color: #fff; text-align: center; text-shadow: 0 1px 2px #000, 0 0 4px #000; word-break: break-word; line-height: 1.25; }
+a.dicon:link, a.dicon:visited { color: #fff; }
+
+.window {
+  position: relative; z-index: 2; flex: 1; min-height: 0; display: flex; flex-direction: column;
+  width: min(1120px, calc(100% - 220px)); margin: 18px auto 10px;
+  background: rgba(150, 185, 220, .55); -webkit-backdrop-filter: blur(12px) saturate(1.4); backdrop-filter: blur(12px) saturate(1.4);
+  border: 1px solid rgba(0, 0, 0, .7); border-radius: 8px 8px 4px 4px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .55), 0 8px 30px rgba(0, 0, 0, .65);
+  padding: 0 7px 7px;
+}
+.titlebar { display: flex; align-items: center; gap: 7px; height: 30px; padding: 0 0 0 4px; }
+.wtitle { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font: 13px "Segoe UI", Tahoma, Arial, sans-serif; color: #000; text-shadow: 0 0 9px #fff, 0 0 9px #fff, 0 0 4px #fff; }
+.caption { align-self: flex-start; display: flex; border: 1px solid rgba(0, 0, 0, .55); border-top: 0; border-radius: 0 0 5px 5px; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .5); }
+.cb { width: 27px; height: 19px; position: relative; background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .15) 50%, rgba(140, 170, 210, .3) 51%, rgba(255, 255, 255, .35)); border-left: 1px solid rgba(0, 0, 0, .35); }
+.cb.min { border-left: 0; }
+.cb.close { width: 46px; background: linear-gradient(#e9a99a, #d0715c 50%, #c4442a 51%, #d9785e); }
+.cb.min::after { content: ""; position: absolute; left: 9px; right: 9px; bottom: 5px; height: 3px; background: #fff; box-shadow: 0 0 0 1px rgba(0, 0, 0, .5); }
+.cb.max::after { content: ""; position: absolute; left: 8px; right: 8px; top: 4px; bottom: 5px; border: 1px solid #fff; border-top-width: 3px; box-shadow: 0 0 0 1px rgba(0, 0, 0, .45); }
+.cb.close::after { content: "\2715"; position: absolute; inset: 0; display: grid; place-items: center; font: bold 13px Arial, sans-serif; color: #fff; text-shadow: 0 0 2px #000; }
+.navbar { display: flex; align-items: center; gap: 4px; height: 36px; padding: 0 2px 4px; }
+.nav-back, .nav-fwd { flex: none; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #1d3f73; cursor: pointer; position: relative;
+  background: radial-gradient(circle at 50% 30%, #bcd9fb, #3b7fd2 55%, #1d4f9a); box-shadow: inset 0 1px 1px rgba(255, 255, 255, .8), 0 1px 2px rgba(0, 0, 0, .4); }
+.nav-fwd { width: 26px; height: 26px; margin-left: -6px; }
+.nav-back::after, .nav-fwd::after { content: ""; position: absolute; top: 50%; left: 50%; width: 9px; height: 9px; border: solid #fff; border-width: 0 0 3px 3px; translate: -30% -50%; rotate: 45deg; filter: drop-shadow(0 0 1px rgba(0, 0, 0, .5)); }
+.nav-fwd::after { border-width: 3px 3px 0 0; translate: -70% -50%; width: 7px; height: 7px; }
+.address { flex: 1; min-width: 0; display: flex; align-items: center; gap: 6px; height: 24px; padding: 0 6px; margin-left: 4px; background: #fff; border: 1px solid #6d86a8; border-radius: 2px; box-shadow: inset 0 1px 2px rgba(0, 0, 0, .2); }
+.address span { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font: 13px "Segoe UI", Tahoma, Arial, sans-serif; color: #000; }
+.reload { width: 24px; height: 24px; border-radius: 2px; background: linear-gradient(#f4f8fd, #d4e2f2); border: 1px solid #6d86a8; position: relative; }
+.reload::after { content: "\21bb"; position: absolute; inset: 0; display: grid; place-items: center; font: bold 14px Arial, sans-serif; color: #2d6a2d; }
+.tabstrip { display: flex; align-items: flex-end; gap: 2px; height: 26px; padding: 0 2px; }
+.tab { display: flex; align-items: center; gap: 6px; max-width: 240px; height: 24px; padding: 0 10px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+  font: 12px "Segoe UI", Tahoma, Arial, sans-serif; color: #000; background: linear-gradient(#fdfeff, #dfe9f5); border: 1px solid #7d93b2; border-bottom: 0; border-radius: 4px 4px 0 0; }
+.tab.new { width: 30px; padding: 0; background: rgba(255, 255, 255, .35); }
+.viewport { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; scroll-padding-top: 12px;
+  background: var(--tile) url("bg-tile.png") 0 0 / 32px 32px; image-rendering: pixelated; border: 1px solid #6d86a8; }
+.viewport img { image-rendering: auto; }
+.viewport .px, .viewport #logo img, .viewport .gui, .viewport .render { image-rendering: pixelated; }
+.statusbar { display: flex; gap: 14px; align-items: center; height: 22px; padding: 0 6px; font: 12px "Segoe UI", Tahoma, Arial, sans-serif; color: #000; background: linear-gradient(#f0f4fa, #dce6f2); border: 1px solid #6d86a8; border-top: 0; }
+.statusbar .zone { margin-left: auto; }
+.taskbar { position: relative; z-index: 3; flex: none; height: 40px; display: flex; align-items: center; gap: 4px; padding: 0 6px 0 4px;
+  background: rgba(20, 30, 45, .72); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-top: 1px solid rgba(255, 255, 255, .35); box-shadow: inset 0 1px 0 rgba(0, 0, 0, .6); }
+.orb { width: 38px; height: 38px; margin-right: 6px; border-radius: 50%; position: relative;
+  background: radial-gradient(circle at 50% 30%, rgba(255, 255, 255, .55), rgba(60, 40, 12, .9) 60%, #1b1208); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .6), 0 0 8px rgba(255, 210, 110, .45); }
+.orb::after { content: ""; position: absolute; inset: 7px; background: url("b-logo.png") center / contain no-repeat; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .6)); }
+.task { width: 56px; height: 36px; display: grid; place-items: center; border-radius: 3px; border: 1px solid rgba(255, 255, 255, .25); background: rgba(255, 255, 255, .08); }
+.task.active { background: linear-gradient(rgba(255, 255, 255, .35), rgba(255, 255, 255, .12) 50%, rgba(255, 255, 255, .05)); border-color: rgba(255, 255, 255, .5); }
+.tray { margin-left: auto; display: flex; flex-direction: column; align-items: center; font: 12px "Segoe UI", Tahoma, Arial, sans-serif; color: #fff; line-height: 1.3; padding: 0 8px; }
+.viewport .footer { margin-bottom: 0; }
+
+@media (max-width: 1000px) {
+  .icons { display: none; }
+  .window { width: calc(100% - 16px); margin: 8px auto 6px; }
+}
+@media (max-width: 760px) {
+  .window { width: 100%; margin: 0; border-radius: 0; padding: 0 4px 4px; }
+  .tabstrip, .statusbar, .reload { display: none; }
+  .titlebar { height: 26px; }
+  .cb { width: 22px; height: 16px; } .cb.close { width: 36px; }
+  .taskbar { height: 34px; }
+  .orb { width: 30px; height: 30px; } .orb::after { inset: 5px; }
+  .task { width: 44px; height: 30px; }
+}
+
+/* ═══ Boot: once per visit the computer starts up before the desktop shows ═══ */
+.boot { position: fixed; inset: 0; z-index: 100; background: #000; color: #c0c0c0; cursor: pointer; overflow: hidden; }
+.boot.out { opacity: 0; transition: opacity .7s ease; pointer-events: none; }
+.boot .stage { position: absolute; inset: 0; display: none; }
+.boot .stage.on { display: block; }
+.boot .bios { padding: 4vh 4vw; font: clamp(11px, 1.9vw, 17px)/1.45 "Lucida Console", "Courier New", monospace; white-space: pre-wrap; }
+.boot .bios .hi { color: #fff; }
+.boot .bios .ok { color: #e8c95a; }
+.boot .bios .bar { position: absolute; left: 4vw; right: 4vw; bottom: 4vh; display: flex; justify-content: space-between; gap: 12px; color: #fff; }
+.boot .start { display: none; place-items: center; }
+.boot .start.on { display: grid; }
+.boot .start .mark { position: relative; width: 120px; height: 120px; }
+.boot .start .dot { position: absolute; left: 50%; top: 50%; width: 22px; height: 22px; margin: -11px; border-radius: 50%;
+  background: radial-gradient(circle, #fff6c8, #e2c24a 45%, rgba(226, 194, 74, 0) 70%); filter: blur(.5px); animation: converge 2.2s cubic-bezier(.5, 0, .2, 1) forwards; }
+.boot .start .dot:nth-child(1) { --x: -140px; --y: -90px; }
+.boot .start .dot:nth-child(2) { --x: 150px; --y: -70px; animation-delay: .1s; }
+.boot .start .dot:nth-child(3) { --x: -120px; --y: 110px; animation-delay: .2s; }
+.boot .start .dot:nth-child(4) { --x: 130px; --y: 100px; animation-delay: .3s; }
+@keyframes converge { 0% { transform: translate(var(--x), var(--y)) scale(.4); opacity: 0; } 25% { opacity: 1; } 70% { transform: translate(0, 0) scale(1.5); opacity: 1; } 100% { transform: translate(0, 0) scale(2.6); opacity: 0; } }
+.boot .start .door { position: absolute; inset: 22px 30px; opacity: 0; animation: doorin .8s 1.5s ease forwards; }
+.boot .start .door svg { width: 100%; height: 100%; fill: #e2c24a; filter: drop-shadow(0 0 10px rgba(255, 220, 120, .8)); }
+@keyframes doorin { from { opacity: 0; transform: scale(.85); } to { opacity: 1; transform: none; } }
+.boot .start p { position: absolute; left: 0; right: 0; top: calc(50% + 100px); text-align: center; margin: 0; font: 20px "Segoe UI", Tahoma, Arial, sans-serif; color: #fff; opacity: 0; animation: doorin .6s .4s ease forwards; letter-spacing: .02em; }
+.boot .start small { position: absolute; left: 0; right: 0; bottom: 6vh; text-align: center; font: 12px "Segoe UI", Tahoma, Arial, sans-serif; color: #777; }
+.boot .welcome { display: none; place-items: center; background: radial-gradient(ellipse at 50% 40%, #6b5a22 0%, #2e260f 55%, #120f06 100%); }
+.boot .welcome.on { display: grid; }
+.boot .welcome .who { display: flex; flex-direction: column; align-items: center; gap: 18px; color: #fff; font: 300 clamp(26px, 6vw, 40px) "Segoe UI", Tahoma, Arial, sans-serif; text-shadow: 0 2px 8px rgba(0, 0, 0, .6); }
+.boot .welcome .tile { width: 112px; height: 112px; padding: 10px; border-radius: 8px; background: linear-gradient(rgba(255, 255, 255, .55), rgba(255, 255, 255, .15)); box-shadow: 0 0 0 1px rgba(255, 255, 255, .6), 0 6px 18px rgba(0, 0, 0, .5); }
+.boot .welcome .tile img { width: 100%; height: 100%; image-rendering: pixelated; background: #24201b; border-radius: 3px; }
+.boot .welcome .spin { display: flex; align-items: center; gap: 12px; font-size: clamp(20px, 4.5vw, 28px); }
+.boot .welcome .ring { width: 26px; height: 26px; border-radius: 50%; border: 3px solid rgba(255, 255, 255, .25); border-top-color: #fff; animation: spin .9s linear infinite; }
+@keyframes spin { to { rotate: 360deg; } }
+.boot .skip-hint { position: absolute; right: 14px; bottom: 12px; font: 11px "Segoe UI", Tahoma, Arial, sans-serif; color: #666; }
+.desktop.waking { opacity: 0; }
+.desktop { transition: opacity .7s ease; }
+html.booting body { background: #000; }
+html.booting .desktop { opacity: 0; }
+
+.speaker { flex: none; width: 26px; height: 26px; margin-left: auto; border: 0; border-radius: 3px; background: none; cursor: pointer; position: relative; }
+.speaker:hover { background: rgba(255, 255, 255, .15); }
+.speaker svg { width: 20px; height: 20px; display: block; margin: auto; }
+.speaker .waves { display: none; }
+.speaker.on .waves { display: inline; }
+.speaker.on .mute { display: none; }
+.speaker + .tray { margin-left: 0; }
+.cb.close { cursor: pointer; }
+.boot .power { display: none; place-items: center; background: radial-gradient(ellipse at 50% 45%, #1a1712, #000 70%); }
+.boot .power.on { display: grid; }
+.boot .power-btn { width: 96px; height: 96px; border-radius: 50%; border: 2px solid #3a3326; background: radial-gradient(circle at 50% 35%, #3d382c, #14120d); box-shadow: 0 0 0 6px #0b0a07, 0 0 24px rgba(232, 201, 90, .25); cursor: pointer; position: relative; }
+.boot .power-btn::before { content: ""; position: absolute; inset: 28px; border: 4px solid #e8c95a; border-top-color: transparent; border-radius: 50%; filter: drop-shadow(0 0 6px rgba(232, 201, 90, .8)); }
+.boot .power-btn::after { content: ""; position: absolute; left: 46px; top: 22px; width: 4px; height: 26px; background: #e8c95a; border-radius: 2px; filter: drop-shadow(0 0 6px rgba(232, 201, 90, .8)); }
+.boot .power-btn:hover { box-shadow: 0 0 0 6px #0b0a07, 0 0 36px rgba(232, 201, 90, .45); }
+.boot .power p { position: absolute; left: 0; right: 0; top: calc(50% + 74px); margin: 0; text-align: center; font: 13px "Segoe UI", Tahoma, Arial, sans-serif; color: #8a826c; letter-spacing: .04em; }
+.boot .power .led { position: absolute; left: 50%; top: calc(50% + 104px); width: 6px; height: 6px; margin-left: -3px; border-radius: 50%; background: #3b2f0e; }
+.boot .start .blogo { position: absolute; inset: 6px 14px; opacity: 0; animation: doorin .8s 1.5s ease forwards; background: url("b-logo.png") center / contain no-repeat; filter: drop-shadow(0 0 14px rgba(255, 220, 120, .55)); }

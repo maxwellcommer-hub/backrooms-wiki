@@ -5,6 +5,11 @@ A static site: plain HTML, one stylesheet (`assets/style.css`), one small script
 It is styled as a 2010-era game site (after minecraft.net in December 2010, from the Wayback Machine): a tiled block
 background (the mod's Settled Mud, `assets/bg-tile.png`), a grey top bar with the pixel logo (`assets/logo.png`, letters
 filled with the Block of Memarium texture), a 980px column with dark side boxes, Arial, and wallpaper yellow as the one accent.
+The whole site sits in a 2010-style browser window on a desktop (Aero-glass frame, address bar, taskbar with a clock), and
+the first visit each session boots the computer: a power button, a BIOS check, the B starting up, a Welcome screen.
+Branding is the mod's B mark from its CurseForge page (`assets/b-logo.png`, favicon and touch icon made from it); the
+wordmark `assets/logo.png` is drawn in the B's gold and brown. Sounds in `assets/sound/` are the mod's own (door power and
+opening, Memory Anchor, lamp flicker, blackout, room tone), converted to mp3; the BIOS beep is synthesised.
 It is published with GitHub Pages at https://maxwellcommer-hub.github.io/backrooms-wiki/ .
 
 ## Preview
