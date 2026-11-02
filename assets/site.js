@@ -118,7 +118,6 @@
     document.addEventListener("keydown", function (e) {
       if (e.key === "/" && document.activeElement !== input && !/input|textarea/i.test(document.activeElement.tagName)) {
         e.preventDefault();
-        if (window.matchMedia("(max-width: 900px)").matches && btn && !document.body.classList.contains("menu-open")) btn.click();
         input.focus();
       }
     });
@@ -136,16 +135,54 @@
     dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
     return dlg;
   }
-  document.querySelectorAll("figure.shot img").forEach(function (img) {
+  document.querySelectorAll("figure.shot img, .recipe img.gui").forEach(function (img) {
     img.addEventListener("click", function () {
       var d = viewer();
       if (typeof d.showModal !== "function") return;
       var big = d.querySelector("img");
       big.src = img.currentSrc || img.src;
       big.alt = img.alt;
-      var cap = img.closest("figure").querySelector("figcaption");
+      var fig = img.closest("figure"), cap = fig ? fig.querySelector("figcaption") : null;
       d.querySelector("p").textContent = cap ? cap.textContent : img.alt;
       d.showModal();
     });
   });
+
+  // ---------- the dock slides away while you read down, and comes back when you scroll up ----------
+  var dock = document.querySelector(".dock"), lastY = window.scrollY;
+  if (dock) {
+    window.addEventListener("scroll", function () {
+      var y = window.scrollY;
+      if (!document.body.classList.contains("menu-open")) dock.classList.toggle("away", y > lastY && y > 240);
+      lastY = y;
+    }, { passive: true });
+  }
+
+  // ---------- the home line misremembers itself: letters come up wrong, then settle ----------
+  var line = document.querySelector(".misremember");
+  if (line && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    var real = line.getAttribute("data-text"), wrong = "ABCDEFGHJKLMNOPRSTUVWXYZ0123456789";
+    var settled = real.split("").map(function () { return false; }), frame = 0;
+    line.setAttribute("aria-label", real);
+    var tick = setInterval(function () {
+      frame++;
+      var out = real.split("").map(function (c, i) {
+        if (c === " ") return " ";
+        if (!settled[i] && frame > 6 + i * 1.6 && Math.random() < 0.35) settled[i] = true;
+        return settled[i] ? c : wrong.charAt(Math.floor(Math.random() * wrong.length));
+      }).join("");
+      line.textContent = out;
+      if (settled.every(function (v, i) { return v || real.charAt(i) === " "; })) {
+        clearInterval(tick);
+        line.textContent = real;
+        // now and then one letter slips, and comes back
+        setInterval(function () {
+          var i = Math.floor(Math.random() * real.length);
+          if (real.charAt(i) === " ") return;
+          line.textContent = real.slice(0, i) + wrong.charAt(Math.floor(Math.random() * wrong.length)) + real.slice(i + 1);
+          setTimeout(function () { line.textContent = real; }, 140);
+        }, 3800);
+      }
+    }, 55);
+  }
 })();
