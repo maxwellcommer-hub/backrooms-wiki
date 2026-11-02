@@ -32,6 +32,7 @@ which loads `assets/search-index.json` with `fetch`.)
 - `assets/icons/`: the mod's own 16x16 item and block textures, drawn pixelated. No Mojang texture files are shipped.
 - `assets/search-index.json`: the client-side search index.
 - `tools/search_index.py`: rebuilds the search index from the pages. Run it after editing any page.
+- `tools/ai_signs.py`: flags writing that reads as machine-made (after Wikipedia's "Signs of AI writing" guide). Run it after editing copy; it should report 0 hits.
 - `tools/check_links.py`: checks every internal link, anchor and image. Run it before publishing.
 - `.nojekyll`: tells GitHub Pages to serve the files as they are.
 

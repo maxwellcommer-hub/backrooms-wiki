@@ -9,29 +9,26 @@
 <meta property="og:title" content="The Keeper - The Backrooms Update Wiki">
 <meta property="og:description" content="The Keeper, the boss of The Backrooms Update: how it stalks and drags, anger, building the Shape to pin it, the fight, the rewind and steal beam, the rearrange, and the Settled Heart.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/shots/hero-pillars.jpg">
+<meta property="og:image" content="assets/shots/rem-high-floors.jpg">
 <link rel="icon" type="image/png" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css">
-<script>try{if(sessionStorage.getItem("booted")!=="1"&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.className+=" booting"}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="assets/style.css?v=202611021413">
+<script>(function(){var d=document.documentElement;try{if(sessionStorage.getItem("booted")!=="1"&&!matchMedia("(prefers-reduced-motion: reduce)").matches)d.classList.add("booting");if(localStorage.getItem("maxed")==="1")d.classList.add("win-max");var g=JSON.parse(sessionStorage.getItem("wingeo")||"null");if(g&&g.w>200&&g.h>200){d.classList.add("win-placed");d.style.setProperty("--wx",g.x+"px");d.style.setProperty("--wy",g.y+"px");d.style.setProperty("--ww",g.w+"px");d.style.setProperty("--wh",g.h+"px");}var w=localStorage.getItem("wall");if(w&&/^assets\/shots\/[a-z0-9-]+\.jpg$/.test(w))d.style.setProperty("--wall","url(\""+w+"\")");}catch(e){}})();</script>
 
 </head>
 <body>
 <a class="skip" href="#main">Skip to the page</a>
-<div class="desktop">
-<div class="icons" aria-hidden="true">
-<a class="dicon" href="index.html" tabindex="-1"><img src="assets/b-logo.png" alt="" width="48" height="48"><span>The Backrooms Update</span></a>
-<a class="dicon" href="the-remembering.html" tabindex="-1"><img class="px" src="assets/icons/settled_lamp_on.png" alt="" width="48" height="48"><span>the_remembering.lnk</span></a>
-<a class="dicon" href="keeper.html" tabindex="-1"><img class="px" src="assets/icons/settled_heart.png" alt="" width="48" height="48"><span>DONT_LOOK.txt</span></a>
-<a class="dicon" href="crafting.html" tabindex="-1"><img class="px" src="assets/icons/memarium_ingot.png" alt="" width="48" height="48"><span>recipes</span></a>
-</div>
-<div class="window">
-<div class="titlebar"><img src="assets/b-logo.png" alt="" width="16" height="16"><span class="wtitle">The Keeper - The Backrooms Update Wiki - Remembering Explorer</span>
-<span class="caption" aria-hidden="true"><span class="cb min"></span><span class="cb max"></span><span class="cb close" title="Close"></span></span></div>
-<div class="navbar"><button class="nav-back" type="button" aria-label="Back" onclick="history.back()"></button><button class="nav-fwd" type="button" aria-label="Forward" onclick="history.forward()"></button>
-<div class="address"><img src="assets/b-logo.png" alt="" width="16" height="16"><span id="address">http://www.thebackroomsupdate.net/keeper.html</span></div>
-<span class="reload" aria-hidden="true"></span></div>
-<div class="tabstrip" aria-hidden="true"><span class="tab"><img src="assets/b-logo.png" alt="" width="16" height="16">The Keeper - The Backrooms Update Wiki</span><span class="tab new"></span></div>
+<div class="desktop" id="desktop">
+<ul class="icons" aria-label="Desktop"><li><a class="dicon" href="index.html"><img src="assets/b-logo.png" alt="" width="48" height="48"><span>The Backrooms Update</span></a></li><li><a class="dicon" href="the-remembering.html"><img class="px" src="assets/icons/settled_lamp_on.png" alt="" width="48" height="48"><span>The Remembering</span></a></li><li><a class="dicon" href="keeper.html"><img class="px" src="assets/icons/settled_heart.png" alt="" width="48" height="48"><span>DONT_LOOK.txt</span></a></li><li><a class="dicon" href="crafting.html"><img class="px" src="assets/icons/memarium_ingot.png" alt="" width="48" height="48"><span>Recipes</span></a></li><li><a class="dicon" href="buried-works.html"><img class="px" src="assets/icons/map_buried_works.png" alt="" width="48" height="48"><span>Buried Works</span></a></li></ul>
+<div class="window" id="win">
+<div class="titlebar" id="titlebar"><img class="ticon" src="assets/b-logo.png" alt="" width="16" height="16"><span class="wtitle">The Keeper - The Backrooms Update Wiki - Remembering Explorer</span>
+<span class="caption"><button class="cb min" type="button" aria-label="Minimize" data-tip="Minimize"></button><button class="cb max" type="button" aria-label="Maximize" data-tip="Maximize"></button><button class="cb close" type="button" aria-label="Close" data-tip="Close"></button></span></div>
+<div class="navbar"><button class="nav-back" type="button" aria-label="Back" data-tip="Back"></button><button class="nav-fwd" type="button" aria-label="Forward" data-tip="Forward"></button>
+<form class="address" action="index.html"><img src="assets/b-logo.png" alt="" width="16" height="16"><input id="address" name="go" value="http://www.thebackroomsupdate.net/keeper.html" aria-label="Address" spellcheck="false" autocomplete="off"><button class="go" type="submit" aria-label="Go to" data-tip="Go to">&#8594;</button></form><button class="reload" type="button" aria-label="Refresh" data-tip="Refresh (F5)"></button></div>
+<div class="tabstrip"><span class="tab"><img src="assets/b-logo.png" alt="" width="16" height="16"><span class="tab-t">The Keeper - The Backrooms Update Wiki</span><button class="tab-x" type="button" aria-label="Close tab" data-tip="Close Tab"></button></span><a class="tab new" href="index.html" target="_blank" rel="noopener" aria-label="New tab" data-tip="New Tab (Ctrl+T)"></a></div>
 <div class="viewport" id="viewport">
 <div id="toppanel"><div class="in">
 <a id="logo" href="index.html"><img src="assets/logo.png" alt="The Backrooms Update" width="720" height="148"></a>
@@ -43,7 +40,7 @@
 <article id="main">
 <p class="crumbs"><a href="index.html">Home</a> &raquo; What lives there &raquo; The Keeper</p><h1>The Keeper</h1><p class="lead">There is one hunter in The Remembering. It can't settle on a shape. The longer you stay, the more things it becomes, and the angrier it gets.</p>
 <nav class="onpage" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#the-hunter">The hunter</a></li><li><a href="#the-shape">The Shape: pinning it</a></li><li><a href="#the-fight">The fight</a></li><li><a href="#beating-him">Beating him</a></li><li><a href="#hiding-from-him">Hiding from him</a></li></ol></nav>
-<div class="gallery g3"><figure class="shot"><img src="assets/shots/keeper-far.jpg" alt="Far off, under the stairs. It only comes closer while you are not looking." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Far off, under the stairs. It only comes closer while you are not looking.</figcaption></figure><figure class="shot"><img src="assets/shots/keeper-near.jpg" alt="Close. The face is a lamp, the body is never quite the same twice." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Close. The face is a lamp, the body is never quite the same twice.</figcaption></figure></div>
+<div class="gallery g3"><figure class="shot"><img src="assets/shots/keeper-far.jpg" alt="The Keeper, far off between the pillars." width="1280" height="720" loading="lazy" decoding="async"><figcaption>The Keeper, far off between the pillars.</figcaption></figure><figure class="shot"><img src="assets/shots/keeper-near.jpg" alt="The Keeper, close." width="1280" height="720" loading="lazy" decoding="async"><figcaption>The Keeper, close.</figcaption></figure></div>
 <h2 id="the-hunter">The hunter<a class="anchor" href="#the-hunter" aria-label="Link to this section">#</a></h2>
 <p>There is one Keeper per world. It is the world trying to remember every mob and every thing at once, unable to settle on one shape: the builders' last monster. Its body keeps changing, and the longer you stay inside, the more things it becomes.</p>
 <ul>
@@ -54,7 +51,7 @@
 <li>Listen: its sounds tell you roughly how far away it is: distant, near, close.</li>
 <li>When it charges at you, darkness falls over your screen.</li>
 </ul>
-<div class="gallery g3"><figure class="shot"><img src="assets/shots/keeper-peek-corner.jpg" alt="Peeking out of a side opening down a corridor." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Peeking out of a side opening down a corridor.</figcaption></figure><figure class="shot"><img src="assets/shots/keeper-peek-jamb.jpg" alt="Leaning out from behind a door jamb, two doorways away." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Leaning out from behind a door jamb, two doorways away.</figcaption></figure><figure class="shot"><img src="assets/shots/keeper-peek-left.jpg" alt="Half behind the corner of a side opening, about 15 blocks off." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Half behind the corner of a side opening, about 15 blocks off.</figcaption></figure></div>
+<div class="gallery g3"><figure class="shot"><img src="assets/shots/keeper-peek-corner.jpg" alt="At the far end of a corridor, half behind the wall." width="1280" height="720" loading="lazy" decoding="async"><figcaption>At the far end of a corridor, half behind the wall.</figcaption></figure><figure class="shot"><img src="assets/shots/keeper-peek-jamb.jpg" alt="Leaning out from behind a doorway, two doorways away." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Leaning out from behind a doorway, two doorways away.</figcaption></figure><figure class="shot"><img src="assets/shots/keeper-peek-left.jpg" alt="Half behind a corner, far down the hall." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Half behind a corner, far down the hall.</figcaption></figure></div>
 
 <h3 id="anger">Anger<a class="anchor" href="#anger" aria-label="Link to this section">#</a></h3>
 <p>Its anger comes from your <strong>total time inside</strong>, across every visit:</p>
@@ -79,15 +76,15 @@
 <h3 id="his-arrival">His arrival<a class="anchor" href="#his-arrival" aria-label="Link to this section">#</a></h3>
 <p>He does not appear on the spot. The Shape keeps standing, and he comes to it:</p>
 <ol>
-<li><strong>Notice</strong>: a few seconds of nothing but sparks on the Memarium, and his distant sound from where he is.</li>
-<li><strong>Arrive</strong>: he appears 8 to 12 blocks away, out of sight, and the lights go out. He walks up to the Shape. Nothing can touch him now: hits just bounce off.</li>
-<li><strong>Inspect</strong>: about eleven seconds standing over the statue while he forms, like the Wither: the boss bar fills, yellow cracks open, frames rise round him and he grows. The fog turns black round you.</li>
-<li><strong>Bash</strong>: he smashes the Shape. A deep boom: the walls next to him shatter, everyone within 10 blocks is thrown back and takes 4 damage, and the floor ripples away from him. The fight starts where he stands.</li>
+<li>He notices. For a few seconds there is nothing but sparks on the Memarium, and his sound, far off.</li>
+<li>He arrives 8 to 12 blocks away, out of sight, and the lights go out. He walks up to the Shape. Nothing can touch him now: hits just bounce off.</li>
+<li>He stands over the statue for about eleven seconds while he forms, like the Wither: the boss bar fills, yellow cracks open, frames rise round him and he grows. The fog turns black round you.</li>
+<li>He smashes the Shape. A deep boom: the walls next to him shatter, everyone within 10 blocks is thrown back and takes 4 damage, and the floor ripples away from him. The fight starts where he stands.</li>
 </ol>
 <div class="callout warn"><p class="callout-title">Breaking the Shape early</p><p>If any of the six blocks is broken before he bashes it, he leaves. The blocks are not refunded, and the builder's time inside counts six minutes more, so he is one step angrier sooner. If the builder leaves The Remembering or logs out first, he leaves too, without the extra anger.</p></div>
 
 <h2 id="the-fight">The fight<a class="anchor" href="#the-fight" aria-label="Link to this section">#</a></h2>
-<figure class="shot"><img src="assets/shots/keeper-fight.jpg" alt="The pinned Keeper, boss bar up, in the office floors." width="1280" height="720" loading="lazy" decoding="async"><figcaption>The pinned Keeper, boss bar up, in the office floors.</figcaption></figure>
+<figure class="shot"><img src="assets/shots/keeper-fight.jpg" alt="The pinned Keeper, boss bar up." width="1280" height="720" loading="lazy" decoding="async"><figcaption>The pinned Keeper, boss bar up.</figcaption></figure>
 <dl class="kv">
 <dt>Health</dt><dd>300 (150 hearts), armor 8, never knocked back</dd>
 <dt>Melee</dt><dd>12 damage up close</dd>
@@ -108,11 +105,11 @@
 <li><strong>Steal</strong> (about one beam in six): the item in your hand is pulled out and drawn along the beam to his face. You can catch it on the way. If it reaches him it glows in his face until you <strong>hit him three times</strong>, or kill him, and it falls back out to you.</li>
 <li>Under half health he beams <strong>twice as often</strong>, and about one beam in three steals.</li>
 </ul>
-<figure class="shot"><img src="assets/shots/keeper-steal.jpg" alt="A stolen diamond sword glowing in the Keeper&#x27;s face. Three hits knock it back out." width="1280" height="720" loading="lazy" decoding="async"><figcaption>A stolen diamond sword glowing in the Keeper's face. Three hits knock it back out.</figcaption></figure>
+
 
 <h3 id="the-rearrange">The rearrange<a class="anchor" href="#the-rearrange" aria-label="Link to this section">#</a></h3>
 <p>Thirty seconds into the fight, and then every 45 to 60 seconds, he <strong>moves the walls</strong>. Every wall of the floor within 50 blocks of him lifts, slides and drops into a new plan of the floor, rippling out from him. It does no damage, but the way you knew is gone. Pits, stairs, the ramp, refuges, structures, door rooms, your own blocks and any cell with somebody in it are left alone.</p>
-<figure class="shot"><img src="assets/shots/keeper-rearrange.jpg" alt="After a rearrange: the halls round him are a different building." width="1280" height="720" loading="lazy" decoding="async"><figcaption>After a rearrange: the halls round him are a different building.</figcaption></figure>
+
 
 <h3 id="eating-the-walls">Eating the walls<a class="anchor" href="#eating-the-walls" aria-label="Link to this section">#</a></h3>
 <p>Hurt (below 90% health), every 25 to 45 seconds he pulls up to eight wall blocks within 8 blocks into himself, and each one <strong>mends 5 health</strong>. Fighting in open floor, away from the walls, gives him less to eat.</p>
@@ -152,10 +149,34 @@
 <p>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft. An unofficial fan retelling inspired by Kane Parsons' Backrooms, not affiliated with Kane Parsons or A24.</p>
 </div>
 </div>
-<div class="statusbar" aria-hidden="true"><span>Done</span><span class="zone">Internet | Protected Mode: Off</span><span>100%</span></div>
+<div class="statusbar"><span class="status" id="status">Done</span><span class="progress" hidden><span></span></span><span class="zone">Internet | Protected Mode: Off</span><span class="zoom">100%</span><span class="grip" aria-hidden="true"></span></div>
+<span class="rs rs-e" aria-hidden="true"></span><span class="rs rs-s" aria-hidden="true"></span><span class="rs rs-se" aria-hidden="true"></span>
 </div>
-<div class="taskbar"><span class="orb" aria-hidden="true"></span><span class="task active"><img src="assets/b-logo.png" alt="" width="22" height="22"></span><span class="task"><img class="px" src="assets/icons/memarium_pickaxe.png" alt="" width="20" height="20"></span><button class="speaker" type="button" aria-label="Room tone on or off" aria-pressed="false" title="Room tone"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7h3l5-4v14l-5-4H3z" fill="#fff"/><path class="waves" d="M13.5 7a4 4 0 0 1 0 6M15.5 4.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="#fff" stroke-width="1.6"/><path class="mute" d="M13 7l5 6M18 7l-5 6" stroke="#fff" stroke-width="1.6"/></svg></button><span class="tray"><span id="clock">3:00 AM</span><span id="date">11/2/2026</span></span></div>
+<div class="snap" aria-hidden="true"></div>
+<button class="reopen" type="button">Remembering Explorer is closed.<br>Double-click <b>The Backrooms Update</b> on the desktop, or click here, to open it again.</button>
+<div class="startmenu" id="startmenu" hidden>
+<div class="sm-left"><ul class="sm-programs"><li class="sm-head">Start</li><li><a href="index.html"><img class="px" src="assets/icons/memarium_ingot.png" alt="" width="16" height="16">Home</a></li><li><a href="getting-in.html"><img class="px" src="assets/icons/gateway.png" alt="" width="16" height="16">Getting In</a></li><li class="sm-head">The dimension</li><li><a href="the-remembering.html"><img class="px" src="assets/icons/settled_lamp_on.png" alt="" width="16" height="16">The Remembering</a></li><li><a href="rules.html"><img class="px" src="assets/icons/memarium_pickaxe.png" alt="" width="16" height="16">Rules of the dimension</a></li><li><a href="insanity.html"><img class="px" src="assets/icons/insanity.png" alt="" width="16" height="16">Insanity</a></li><li><a href="refuges.html"><img class="px" src="assets/icons/memento.png" alt="" width="16" height="16">Refuges</a></li><li class="sm-head">What lives there</li><li><a href="mobs.html"><img class="px" src="assets/icons/settled_lichen.png" alt="" width="16" height="16">Mobs</a></li><li><a href="keeper.html"><img class="px" src="assets/icons/settled_heart.png" alt="" width="16" height="16">The Keeper</a></li><li><a href="buried-works.html"><img class="px" src="assets/icons/map_buried_works.png" alt="" width="16" height="16">Buried Works</a></li><li class="sm-head">Reference</li><li><a href="items.html"><img class="px" src="assets/icons/snapshot.png" alt="" width="16" height="16">Items and blocks</a></li><li><a href="crafting.html"><img class="px" src="assets/icons/remembered_upgrade_smithing_template.png" alt="" width="16" height="16">Crafting</a></li><li><a href="config.html"><span class="nav-dot" aria-hidden="true"></span>Config</a></li><li><a href="commands.html"><span class="nav-dot" aria-hidden="true"></span>Commands</a></li><li><a href="faq.html"><span class="nav-dot" aria-hidden="true"></span>FAQ and compatibility</a></li></ul><div class="sm-results" hidden></div>
+<div class="sm-search"><input id="sm-search" type="search" placeholder="Search the wiki" aria-label="Search the wiki" autocomplete="off"></div></div>
+<div class="sm-right"><img class="sm-user" src="assets/b-logo.png" alt="" width="48" height="48">
+<a href="index.html">The Backrooms Update</a><a href="getting-in.html">Getting In</a><a href="items.html">Items and blocks</a><a href="crafting.html">Crafting</a><a href="faq.html">FAQ</a>
+<span class="sm-sep"></span><a href="https://www.curseforge.com/minecraft/mc-mods/minecraft-backrooms-update" target="_blank" rel="noopener">Download</a><a href="https://github.com/maxwellcommer-hub/backrooms-wiki" target="_blank" rel="noopener">Wiki source</a>
+<div class="sm-power"><button class="shutdown" type="button">Shut down</button><button class="sm-more" type="button" aria-label="More power options" aria-expanded="false" data-tip="More options"></button>
+<div class="sm-powermenu" hidden><button type="button" data-power="restart">Restart</button><button type="button" data-power="shutdown">Shut down</button></div></div></div>
 </div>
-<script src="assets/site.js" defer></script>
+<div class="ctxmenu" id="ctxmenu" hidden><button type="button" data-cmd="refresh">Refresh</button><button type="button" data-cmd="wallpaper">Next desktop background</button><span class="cm-sep"></span><button type="button" data-cmd="open">Open Remembering Explorer</button><button type="button" data-cmd="desktop">Show desktop</button></div>
+<div class="flyout cal" id="calendar" hidden></div>
+<div class="flyout volfly" id="volume" hidden><span class="vol-label">Room tone</span><input class="vol-range" type="range" min="0" max="100" value="25" aria-label="Room tone volume" orient="vertical"><button class="vol-mute" type="button" aria-label="Mute" data-tip="Mute"></button></div>
+<div class="peek" id="peek" hidden></div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<div class="taskbar" id="taskbar">
+<button class="orb" type="button" aria-label="Start" aria-expanded="false" aria-controls="startmenu" data-tip="Start"></button>
+<a class="task pin" href="https://www.curseforge.com/minecraft/mc-mods/minecraft-backrooms-update" target="_blank" rel="noopener" aria-label="Download The Backrooms Update" data-tip="Download The Backrooms Update"><img class="px" src="assets/icons/memarium_pickaxe.png" alt="" width="22" height="22"></a>
+<button class="task app" type="button" aria-label="Remembering Explorer"><img src="assets/b-logo.png" alt="" width="24" height="24"></button>
+<div class="tray"><button class="speaker" type="button" aria-label="Room tone" aria-pressed="false" data-tip="Room tone"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7h3l5-4v14l-5-4H3z" fill="#fff"/><path class="waves" d="M13.5 7a4 4 0 0 1 0 6M15.5 4.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="#fff" stroke-width="1.6"/><path class="mute" d="M13 7l5 6M18 7l-5 6" stroke="#fff" stroke-width="1.6"/></svg></button>
+<button class="clock" type="button" aria-label="Date and time"><span id="clock">12:00 PM</span><span id="date">11/2/2026</span></button>
+<button class="showdesk" type="button" aria-label="Show desktop" data-tip="Show desktop"></button></div>
+</div>
+</div>
+<script src="assets/site.js?v=202611021413" defer></script>
 </body>
 </html>

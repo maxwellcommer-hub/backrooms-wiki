@@ -9,29 +9,26 @@
 <meta property="og:title" content="The Remembering - The Backrooms Update Wiki">
 <meta property="og:description" content="The Remembering dimension: overworld, Nether and End floors, floor styles, the geometric level, the loop and its seams, pits, the ramp, lamps, blackouts and settled patches.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/shots/hero-pillars.jpg">
+<meta property="og:image" content="assets/shots/rem-high-floors.jpg">
 <link rel="icon" type="image/png" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css">
-<script>try{if(sessionStorage.getItem("booted")!=="1"&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.className+=" booting"}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="assets/style.css?v=202611021413">
+<script>(function(){var d=document.documentElement;try{if(sessionStorage.getItem("booted")!=="1"&&!matchMedia("(prefers-reduced-motion: reduce)").matches)d.classList.add("booting");if(localStorage.getItem("maxed")==="1")d.classList.add("win-max");var g=JSON.parse(sessionStorage.getItem("wingeo")||"null");if(g&&g.w>200&&g.h>200){d.classList.add("win-placed");d.style.setProperty("--wx",g.x+"px");d.style.setProperty("--wy",g.y+"px");d.style.setProperty("--ww",g.w+"px");d.style.setProperty("--wh",g.h+"px");}var w=localStorage.getItem("wall");if(w&&/^assets\/shots\/[a-z0-9-]+\.jpg$/.test(w))d.style.setProperty("--wall","url(\""+w+"\")");}catch(e){}})();</script>
 
 </head>
 <body>
 <a class="skip" href="#main">Skip to the page</a>
-<div class="desktop">
-<div class="icons" aria-hidden="true">
-<a class="dicon" href="index.html" tabindex="-1"><img src="assets/b-logo.png" alt="" width="48" height="48"><span>The Backrooms Update</span></a>
-<a class="dicon" href="the-remembering.html" tabindex="-1"><img class="px" src="assets/icons/settled_lamp_on.png" alt="" width="48" height="48"><span>the_remembering.lnk</span></a>
-<a class="dicon" href="keeper.html" tabindex="-1"><img class="px" src="assets/icons/settled_heart.png" alt="" width="48" height="48"><span>DONT_LOOK.txt</span></a>
-<a class="dicon" href="crafting.html" tabindex="-1"><img class="px" src="assets/icons/memarium_ingot.png" alt="" width="48" height="48"><span>recipes</span></a>
-</div>
-<div class="window">
-<div class="titlebar"><img src="assets/b-logo.png" alt="" width="16" height="16"><span class="wtitle">The Remembering - The Backrooms Update Wiki - Remembering Explorer</span>
-<span class="caption" aria-hidden="true"><span class="cb min"></span><span class="cb max"></span><span class="cb close" title="Close"></span></span></div>
-<div class="navbar"><button class="nav-back" type="button" aria-label="Back" onclick="history.back()"></button><button class="nav-fwd" type="button" aria-label="Forward" onclick="history.forward()"></button>
-<div class="address"><img src="assets/b-logo.png" alt="" width="16" height="16"><span id="address">http://www.thebackroomsupdate.net/the-remembering.html</span></div>
-<span class="reload" aria-hidden="true"></span></div>
-<div class="tabstrip" aria-hidden="true"><span class="tab"><img src="assets/b-logo.png" alt="" width="16" height="16">The Remembering - The Backrooms Update Wiki</span><span class="tab new"></span></div>
+<div class="desktop" id="desktop">
+<ul class="icons" aria-label="Desktop"><li><a class="dicon" href="index.html"><img src="assets/b-logo.png" alt="" width="48" height="48"><span>The Backrooms Update</span></a></li><li><a class="dicon" href="the-remembering.html"><img class="px" src="assets/icons/settled_lamp_on.png" alt="" width="48" height="48"><span>The Remembering</span></a></li><li><a class="dicon" href="keeper.html"><img class="px" src="assets/icons/settled_heart.png" alt="" width="48" height="48"><span>DONT_LOOK.txt</span></a></li><li><a class="dicon" href="crafting.html"><img class="px" src="assets/icons/memarium_ingot.png" alt="" width="48" height="48"><span>Recipes</span></a></li><li><a class="dicon" href="buried-works.html"><img class="px" src="assets/icons/map_buried_works.png" alt="" width="48" height="48"><span>Buried Works</span></a></li></ul>
+<div class="window" id="win">
+<div class="titlebar" id="titlebar"><img class="ticon" src="assets/b-logo.png" alt="" width="16" height="16"><span class="wtitle">The Remembering - The Backrooms Update Wiki - Remembering Explorer</span>
+<span class="caption"><button class="cb min" type="button" aria-label="Minimize" data-tip="Minimize"></button><button class="cb max" type="button" aria-label="Maximize" data-tip="Maximize"></button><button class="cb close" type="button" aria-label="Close" data-tip="Close"></button></span></div>
+<div class="navbar"><button class="nav-back" type="button" aria-label="Back" data-tip="Back"></button><button class="nav-fwd" type="button" aria-label="Forward" data-tip="Forward"></button>
+<form class="address" action="index.html"><img src="assets/b-logo.png" alt="" width="16" height="16"><input id="address" name="go" value="http://www.thebackroomsupdate.net/the-remembering.html" aria-label="Address" spellcheck="false" autocomplete="off"><button class="go" type="submit" aria-label="Go to" data-tip="Go to">&#8594;</button></form><button class="reload" type="button" aria-label="Refresh" data-tip="Refresh (F5)"></button></div>
+<div class="tabstrip"><span class="tab"><img src="assets/b-logo.png" alt="" width="16" height="16"><span class="tab-t">The Remembering - The Backrooms Update Wiki</span><button class="tab-x" type="button" aria-label="Close tab" data-tip="Close Tab"></button></span><a class="tab new" href="index.html" target="_blank" rel="noopener" aria-label="New tab" data-tip="New Tab (Ctrl+T)"></a></div>
 <div class="viewport" id="viewport">
 <div id="toppanel"><div class="in">
 <a id="logo" href="index.html"><img src="assets/logo.png" alt="The Backrooms Update" width="720" height="148"></a>
@@ -43,7 +40,7 @@
 <article id="main">
 <p class="crumbs"><a href="index.html">Home</a> &raquo; The dimension &raquo; The Remembering</p><h1>The Remembering</h1><p class="lead">It is your world, at the same coordinates, remembered floor upon floor. It gets some of it wrong.</p>
 <nav class="onpage" aria-label="On this page"><h2>On this page</h2><ol><li><a href="#one-loop-1392-blocks-tall">One loop, 1392 blocks tall</a></li><li><a href="#floor-styles">Floor styles</a></li><li><a href="#pits-shafts-stairs-and-the-ramp">Pits, shafts, stairs and the ramp</a></li><li><a href="#the-geometric-level">The geometric level</a></li><li><a href="#the-seams">The seams</a></li><li><a href="#lamps-flicker-and-blackouts">Lamps, flicker and blackouts</a></li><li><a href="#settled-patches">Settled patches</a></li><li><a href="#the-rooms-it-remembers">The rooms it remembers</a></li></ol></nav>
-<figure class="shot"><img src="assets/shots/rem-surface.jpg" alt="An overworld floor near the surface: the remembered grass and stone come up through the office." width="1280" height="720" loading="lazy" decoding="async"><figcaption>An overworld floor near the surface: the remembered grass and stone come up through the office.</figcaption></figure>
+<figure class="shot"><img src="assets/shots/rem-surface.jpg" alt="An overworld floor: plain office rooms, doorways and lamps." width="1280" height="720" loading="lazy" decoding="async"><figcaption>An overworld floor: plain office rooms, doorways and lamps.</figcaption></figure>
 <h2 id="one-loop-1392-blocks-tall">One loop, 1392 blocks tall<a class="anchor" href="#one-loop-1392-blocks-tall" aria-label="Link to this section">#</a></h2>
 <p>The Remembering (<code>backrooms:the_remembering</code>) runs from <strong>y 319 down to y -1072</strong>. It is your world at the same x and z, and it is one loop: fall out of the bottom and you come out at the top; build or fly out of the top and you come out at the bottom. There are no loading screens anywhere inside.</p>
 <div class="depth" role="list">
@@ -53,8 +50,8 @@
 <div class="depth-row" role="listitem"><div class="depth-y" style="background:#8f8458">y -305<small>to y -1072</small></div><div class="depth-body"><strong>The geometric level</strong>Forgetting floors, then gyroid halls, then the Menger lattice down to the bottom. Lamps: 55% lit. Below the bottom is the top again.</div></div>
 </div>
 <p>The first three groups are built of the same <strong>floors</strong>: every floor is six blocks, a floor block, four blocks of room and a ceiling. The office is the original vanilla look: stripped birch walls, cut sandstone ceilings, brown mushroom block floors mixed with packed mud and rooted dirt, and lamps in pairs.</p>
-<div class="gallery g2"><figure class="shot"><img src="assets/shots/rem-high-floors.jpg" alt="High overworld floors: wide open, the haze closing in." width="1280" height="720" loading="lazy" decoding="async"><figcaption>High overworld floors: wide open, the haze closing in.</figcaption></figure><figure class="shot"><img src="assets/shots/rem-nether.jpg" alt="A Nether floor: the remembered Nether shows through the rooms." width="1280" height="720" loading="lazy" decoding="async"><figcaption>A Nether floor: the remembered Nether shows through the rooms.</figcaption></figure></div>
-<div class="gallery g2"><figure class="shot"><img src="assets/shots/rem-end.jpg" alt="An End floor, end stone underfoot and fewer lamps lit." width="1280" height="720" loading="lazy" decoding="async"><figcaption>An End floor, end stone underfoot and fewer lamps lit.</figcaption></figure><figure class="shot"><img src="assets/shots/rem-stairs.jpg" alt="Stairs between floors. Shafts, pits and a long ramp run through them too." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Stairs between floors. Shafts, pits and a long ramp run through them too.</figcaption></figure></div>
+<div class="gallery g2"><figure class="shot"><img src="assets/shots/rem-high-floors.jpg" alt="High overworld floors: wide open, the haze closing in." width="1280" height="720" loading="lazy" decoding="async"><figcaption>High overworld floors: wide open, the haze closing in.</figcaption></figure><figure class="shot"><img src="assets/shots/rem-nether.jpg" alt="A Nether floor." width="1280" height="720" loading="lazy" decoding="async"><figcaption>A Nether floor.</figcaption></figure></div>
+<div class="gallery g2"><figure class="shot"><img src="assets/shots/rem-end.jpg" alt="An End floor, end stone underfoot and fewer lamps lit." width="1280" height="720" loading="lazy" decoding="async"><figcaption>An End floor, end stone underfoot and fewer lamps lit.</figcaption></figure><figure class="shot"><img src="assets/shots/rem-stairs.jpg" alt="Stairs between floors." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Stairs between floors.</figcaption></figure></div>
 
 <h3 id="the-building">The building<a class="anchor" href="#the-building" aria-label="Link to this section">#</a></h3>
 <p>The floors are laid on a 7-block grid of cells, and every stretch of floor is a mix of zones: rooms, cubicles, long halls running east-west or north-south, big rooms, pillar fields and empty open floor. Walls between cells can be open, solid, a doorway or a half-height wall.</p>
@@ -74,27 +71,27 @@
 <ul>
 <li><strong>Pits</strong> are wide square holes through many floors. Most regions of about 192 by 192 blocks hold one. About a quarter of them go <strong>the whole way round</strong> the loop; the rest stop at a floor part way down. <code>/backrooms locate pit</code> finds the nearest one that goes all the way.</li>
 <li><strong>Shafts</strong> (2 by 2) and <strong>stair cells</strong> link neighbouring floors everywhere.</li>
-<li><strong>The ramp</strong>: in about half of all 320-block regions a long ramp, 96 blocks long and 3 wide, cuts down through the floors.</li>
+<li>In about half of all 320-block regions a long <strong>ramp</strong>, 96 blocks long and 3 wide, cuts down through the floors.</li>
 <li>Stairs lead down from the End's lowest floor into the geometric level.</li>
 <li>You can always dig or build your own way up or down.</li>
 </ul>
-<div class="gallery g3"><figure class="shot"><img src="assets/shots/rem-pit-across.jpg" alt="Across a pit" width="1280" height="720" loading="lazy" decoding="async"><figcaption>Across a pit</figcaption></figure><figure class="shot"><img src="assets/shots/rem-pit-down.jpg" alt="Down a pit that goes all the way" width="1280" height="720" loading="lazy" decoding="async"><figcaption>Down a pit that goes all the way</figcaption></figure><figure class="shot"><img src="assets/shots/rem-ramp.jpg" alt="The ramp" width="1280" height="720" loading="lazy" decoding="async"><figcaption>The ramp</figcaption></figure></div>
+<div class="gallery g3"><figure class="shot"><img src="assets/shots/rem-pit-across.jpg" alt="Across a pit" width="1280" height="720" loading="lazy" decoding="async"><figcaption>Across a pit</figcaption></figure><figure class="shot"><img src="assets/shots/rem-pit-down.jpg" alt="Down a pit that goes all the way" width="1280" height="720" loading="lazy" decoding="async"><figcaption>Down a pit that goes all the way</figcaption></figure></div>
 <div class="callout tip"><p class="callout-title">Falling is safe at the seam</p><p>The loop itself never hurts you: falling out of the bottom brings you in at the top (y 315), and your first landing after the wrap does no fall damage, however far it is. A fall that never reaches the bottom still counts: a pit that stops part way down ends on a hard floor.</p></div>
 
 <h2 id="the-geometric-level">The geometric level<a class="anchor" href="#the-geometric-level" aria-label="Link to this section">#</a></h2>
 <p>Under the End floors the building gives up. The geometric level runs from y -305 to the bottom at y -1072:</p>
 <ol>
 <li><strong>Forgetting floors</strong> (the first 320 blocks): office floors of varying height being eaten away by the math.</li>
-<li><strong>Gyroid halls</strong>: an endless curved surface of stepped blocks you walk, climb and fall through. Gravity is strange in places.</li>
-<li><strong>The Menger lattice</strong>: halfway down the gyroid morphs into a giant stepped cube lattice, which runs to the bottom. Over the last 120 blocks the cubes shrink, so none of them touches the loop.</li>
+<li>The <strong>gyroid halls</strong> are an endless curved surface of stepped blocks you walk, climb and fall through. Gravity is strange in places.</li>
+<li>Halfway down, the gyroid morphs into the <strong>Menger lattice</strong>, a giant stepped cube lattice that runs to the bottom. Over the last 120 blocks the cubes shrink, so none of them touches the loop.</li>
 </ol>
 <p>In the math you also meet <strong>swallowed offices</strong> (whole office blocks half eaten by the geometry), <strong>deep refuges</strong> in clearings, rare Memarium veins in thick floors, and things that move: shapes shift out of sight, birch and mushroom blocks fall from above now and then, and most of the <a href="mobs.html#vivid-flyers">Vivid flyers</a> turn up here, where the open air is.</p>
-<div class="gallery g2"><figure class="shot"><img src="assets/shots/geo-gyroid.jpg" alt="The gyroid halls." width="1280" height="720" loading="lazy" decoding="async"><figcaption>The gyroid halls.</figcaption></figure><figure class="shot"><img src="assets/shots/geo-menger.jpg" alt="The gyroid morphing into the Menger lattice." width="1280" height="720" loading="lazy" decoding="async"><figcaption>The gyroid morphing into the Menger lattice.</figcaption></figure></div>
-<div class="gallery g2"><figure class="shot"><img src="assets/shots/geo-shrink.jpg" alt="Near the bottom the cubes shrink away." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Near the bottom the cubes shrink away.</figcaption></figure><figure class="shot"><img src="assets/shots/geo-swallowed.jpg" alt="A swallowed office in the gyroid." width="1280" height="720" loading="lazy" decoding="async"><figcaption>A swallowed office in the gyroid.</figcaption></figure></div>
+<div class="gallery g2"><figure class="shot"><img src="assets/shots/geo-gyroid.jpg" alt="The gyroid halls." width="1280" height="720" loading="lazy" decoding="async"><figcaption>The gyroid halls.</figcaption></figure><figure class="shot"><img src="assets/shots/geo-menger.jpg" alt="Further down, the gyroid has become the Menger lattice." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Further down, the gyroid has become the Menger lattice.</figcaption></figure></div>
+<figure class="shot"><img src="assets/shots/geo-shrink.jpg" alt="Near the bottom the cubes shrink away." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Near the bottom the cubes shrink away.</figcaption></figure>
 
 <h3 id="memories-and-landmarks">Memories and landmarks<a class="anchor" href="#memories-and-landmarks" aria-label="Link to this section">#</a></h3>
 <p><strong>Memories</strong> hang in pockets of the geometry: 20 famous places and builds, each remembered as a floating island (11 of the mod's own and 9 from vanilla's structures). <strong>Landmarks</strong> are bigger: an end city ship and two giant ruined portals. <code>/backrooms locate memory</code> finds the nearest memory once you are in the geometric level.</p>
-<div class="gallery g2"><figure class="shot"><img src="assets/shots/memory-a.jpg" alt="A memory hanging in the gyroid." width="1280" height="720" loading="lazy" decoding="async"><figcaption>A memory hanging in the gyroid.</figcaption></figure><figure class="shot"><img src="assets/shots/memory-b.jpg" alt="Another memory, a remembered building on its island." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Another memory, a remembered building on its island.</figcaption></figure></div>
+<div class="gallery g2"><figure class="shot"><img src="assets/shots/memory-a.jpg" alt="A memory hanging in the gyroid." width="1280" height="720" loading="lazy" decoding="async"><figcaption>A memory hanging in the gyroid.</figcaption></figure><figure class="shot"><img src="assets/shots/memory-b.jpg" alt="Another memory: a remembered building on its own island." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Another memory: a remembered building on its own island.</figcaption></figure></div>
 <p>Here and there in the geometry the blocks have an <strong>old look</strong>: pockets of Old Stone, Old Cobblestone, Old Bricks and 26 other "old" blocks. They use the pre-1.14 textures from your own copy of the Programmer Art pack; no old textures ship with the mod.</p>
 
 <h2 id="the-seams">The seams<a class="anchor" href="#the-seams" aria-label="Link to this section">#</a></h2>
@@ -106,24 +103,24 @@
 <li>Nothing can stand on a seam: anything touching or pressing into one goes through at once.</li>
 <li>Climb a ladder up into the top seam and you come out at the bottom standing on the nearest lattice block. Flying, floating and gliding things come out right over the bottom seam.</li>
 </ul>
-<figure class="shot"><img src="assets/shots/seam-after-climb.jpg" alt="Just after climbing a ladder up through the top seam: standing on a lattice block over the bottom seam, the top floor drawn below." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Just after climbing a ladder up through the top seam: standing on a lattice block over the bottom seam, the top floor drawn below.</figcaption></figure>
+
 
 <h2 id="lamps-flicker-and-blackouts">Lamps, flicker and blackouts<a class="anchor" href="#lamps-flicker-and-blackouts" aria-label="Link to this section">#</a></h2>
 <p>The ceilings are lit by <a href="items.html#lamps">Stuck, Flickering and Burnt-Out Lamps</a>: redstone lamps that stay lit, flicker or stay dark without any power. The lower the floor, the more of them are dark.</p>
 <ul>
 <li>Flickering lamps only flicker near players, a few bursts a minute.</li>
-<li><strong>Blackouts</strong>: sometimes every lamp around you goes out at once, for 3 to 45 seconds, then comes back in a wave. The fog closes in to about 18 blocks. A blackout often comes when the Keeper gets angrier, and now and then one comes below the End.</li>
+<li>In a <strong>blackout</strong> every lamp around you goes out at once, for 3 to 45 seconds, then comes back in a wave. The fog closes in to about 18 blocks. A blackout often comes when the Keeper gets angrier, and now and then one comes below the End.</li>
 <li><a href="mobs.html#vivid-mobs">Vivid mobs</a> on the ground only spawn during a blackout. Vivid ghasts and phantoms can turn up at any time where there is open air.</li>
 <li>A stuck lamp coming back from a blackout is burnt out one time in 25.</li>
 </ul>
-<div class="gallery g2"><figure class="shot"><img src="assets/shots/blackout-lit.jpg" alt="A room with the lamps on..." width="1280" height="720" loading="lazy" decoding="async"><figcaption>A room with the lamps on...</figcaption></figure><figure class="shot"><img src="assets/shots/blackout-dark.jpg" alt="...and the same room in a blackout." width="1280" height="720" loading="lazy" decoding="async"><figcaption>...and the same room in a blackout.</figcaption></figure></div>
+<div class="gallery g2"><figure class="shot"><img src="assets/shots/blackout-lit.jpg" alt="A room with the lamps on." width="1280" height="720" loading="lazy" decoding="async"><figcaption>A room with the lamps on.</figcaption></figure><figure class="shot"><img src="assets/shots/blackout-dark.jpg" alt="The same room in a blackout." width="1280" height="720" loading="lazy" decoding="async"><figcaption>The same room in a blackout.</figcaption></figure></div>
 
 <h2 id="settled-patches">Settled patches<a class="anchor" href="#settled-patches" aria-label="Link to this section">#</a></h2>
 <p>Rarely, part of a floor has gone the Keeper's brown-black: <strong>settled</strong>. In a settled spot, area or room the birch walls, mushroom and mud floors, the cut sandstone ceiling and the lamps are their <a href="items.html#settled-blocks">settled versions</a>, the settled lamps dim and flickering. At the edges the office goes black a block at a time, and <strong>Settled Lichen</strong> creeps over the floor and up the walls round them. Refuges and structures are never settled.</p>
-<figure class="shot"><img src="assets/shots/settled-room.jpg" alt="A settled room: black birch, settled floors and lichen creeping out of it." width="1280" height="720" loading="lazy" decoding="async"><figcaption>A settled room: black birch, settled floors and lichen creeping out of it.</figcaption></figure>
+
 
 <p>Look up in one: the ceiling has gone black too (<a href="items.html#settled-blocks">Settled Sandstone</a>), and at the edge of the patch it speckles back out into the normal ceiling a block at a time.</p>
-<div class="gallery g2"><figure class="shot"><img src="assets/shots/settled-ceiling.jpg" alt="Inside a settled patch, looking up: a black ceiling round a settled lamp." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Inside a settled patch, looking up: a black ceiling round a settled lamp.</figcaption></figure><figure class="shot"><img src="assets/shots/settled-ceiling-edge.jpg" alt="The edge of the patch: the black ceiling speckles out into the normal one." width="1280" height="720" loading="lazy" decoding="async"><figcaption>The edge of the patch: the black ceiling speckles out into the normal one.</figcaption></figure></div>
+<div class="gallery g2"><figure class="shot"><img src="assets/shots/settled-ceiling.jpg" alt="Inside a settled patch, looking up: a black ceiling round a settled lamp." width="1280" height="720" loading="lazy" decoding="async"><figcaption>Inside a settled patch, looking up: a black ceiling round a settled lamp.</figcaption></figure><figure class="shot"><img src="assets/shots/settled-ceiling-edge.jpg" alt="The edge of a patch: the black ceiling breaks up into the normal one." width="1280" height="720" loading="lazy" decoding="async"><figcaption>The edge of a patch: the black ceiling breaks up into the normal one.</figcaption></figure></div>
 
 
 <h2 id="the-rooms-it-remembers">The rooms it remembers<a class="anchor" href="#the-rooms-it-remembers" aria-label="Link to this section">#</a></h2>
@@ -139,10 +136,34 @@
 <p>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft. An unofficial fan retelling inspired by Kane Parsons' Backrooms, not affiliated with Kane Parsons or A24.</p>
 </div>
 </div>
-<div class="statusbar" aria-hidden="true"><span>Done</span><span class="zone">Internet | Protected Mode: Off</span><span>100%</span></div>
+<div class="statusbar"><span class="status" id="status">Done</span><span class="progress" hidden><span></span></span><span class="zone">Internet | Protected Mode: Off</span><span class="zoom">100%</span><span class="grip" aria-hidden="true"></span></div>
+<span class="rs rs-e" aria-hidden="true"></span><span class="rs rs-s" aria-hidden="true"></span><span class="rs rs-se" aria-hidden="true"></span>
 </div>
-<div class="taskbar"><span class="orb" aria-hidden="true"></span><span class="task active"><img src="assets/b-logo.png" alt="" width="22" height="22"></span><span class="task"><img class="px" src="assets/icons/memarium_pickaxe.png" alt="" width="20" height="20"></span><button class="speaker" type="button" aria-label="Room tone on or off" aria-pressed="false" title="Room tone"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7h3l5-4v14l-5-4H3z" fill="#fff"/><path class="waves" d="M13.5 7a4 4 0 0 1 0 6M15.5 4.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="#fff" stroke-width="1.6"/><path class="mute" d="M13 7l5 6M18 7l-5 6" stroke="#fff" stroke-width="1.6"/></svg></button><span class="tray"><span id="clock">3:00 AM</span><span id="date">11/2/2026</span></span></div>
+<div class="snap" aria-hidden="true"></div>
+<button class="reopen" type="button">Remembering Explorer is closed.<br>Double-click <b>The Backrooms Update</b> on the desktop, or click here, to open it again.</button>
+<div class="startmenu" id="startmenu" hidden>
+<div class="sm-left"><ul class="sm-programs"><li class="sm-head">Start</li><li><a href="index.html"><img class="px" src="assets/icons/memarium_ingot.png" alt="" width="16" height="16">Home</a></li><li><a href="getting-in.html"><img class="px" src="assets/icons/gateway.png" alt="" width="16" height="16">Getting In</a></li><li class="sm-head">The dimension</li><li><a href="the-remembering.html"><img class="px" src="assets/icons/settled_lamp_on.png" alt="" width="16" height="16">The Remembering</a></li><li><a href="rules.html"><img class="px" src="assets/icons/memarium_pickaxe.png" alt="" width="16" height="16">Rules of the dimension</a></li><li><a href="insanity.html"><img class="px" src="assets/icons/insanity.png" alt="" width="16" height="16">Insanity</a></li><li><a href="refuges.html"><img class="px" src="assets/icons/memento.png" alt="" width="16" height="16">Refuges</a></li><li class="sm-head">What lives there</li><li><a href="mobs.html"><img class="px" src="assets/icons/settled_lichen.png" alt="" width="16" height="16">Mobs</a></li><li><a href="keeper.html"><img class="px" src="assets/icons/settled_heart.png" alt="" width="16" height="16">The Keeper</a></li><li><a href="buried-works.html"><img class="px" src="assets/icons/map_buried_works.png" alt="" width="16" height="16">Buried Works</a></li><li class="sm-head">Reference</li><li><a href="items.html"><img class="px" src="assets/icons/snapshot.png" alt="" width="16" height="16">Items and blocks</a></li><li><a href="crafting.html"><img class="px" src="assets/icons/remembered_upgrade_smithing_template.png" alt="" width="16" height="16">Crafting</a></li><li><a href="config.html"><span class="nav-dot" aria-hidden="true"></span>Config</a></li><li><a href="commands.html"><span class="nav-dot" aria-hidden="true"></span>Commands</a></li><li><a href="faq.html"><span class="nav-dot" aria-hidden="true"></span>FAQ and compatibility</a></li></ul><div class="sm-results" hidden></div>
+<div class="sm-search"><input id="sm-search" type="search" placeholder="Search the wiki" aria-label="Search the wiki" autocomplete="off"></div></div>
+<div class="sm-right"><img class="sm-user" src="assets/b-logo.png" alt="" width="48" height="48">
+<a href="index.html">The Backrooms Update</a><a href="getting-in.html">Getting In</a><a href="items.html">Items and blocks</a><a href="crafting.html">Crafting</a><a href="faq.html">FAQ</a>
+<span class="sm-sep"></span><a href="https://www.curseforge.com/minecraft/mc-mods/minecraft-backrooms-update" target="_blank" rel="noopener">Download</a><a href="https://github.com/maxwellcommer-hub/backrooms-wiki" target="_blank" rel="noopener">Wiki source</a>
+<div class="sm-power"><button class="shutdown" type="button">Shut down</button><button class="sm-more" type="button" aria-label="More power options" aria-expanded="false" data-tip="More options"></button>
+<div class="sm-powermenu" hidden><button type="button" data-power="restart">Restart</button><button type="button" data-power="shutdown">Shut down</button></div></div></div>
 </div>
-<script src="assets/site.js" defer></script>
+<div class="ctxmenu" id="ctxmenu" hidden><button type="button" data-cmd="refresh">Refresh</button><button type="button" data-cmd="wallpaper">Next desktop background</button><span class="cm-sep"></span><button type="button" data-cmd="open">Open Remembering Explorer</button><button type="button" data-cmd="desktop">Show desktop</button></div>
+<div class="flyout cal" id="calendar" hidden></div>
+<div class="flyout volfly" id="volume" hidden><span class="vol-label">Room tone</span><input class="vol-range" type="range" min="0" max="100" value="25" aria-label="Room tone volume" orient="vertical"><button class="vol-mute" type="button" aria-label="Mute" data-tip="Mute"></button></div>
+<div class="peek" id="peek" hidden></div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<div class="taskbar" id="taskbar">
+<button class="orb" type="button" aria-label="Start" aria-expanded="false" aria-controls="startmenu" data-tip="Start"></button>
+<a class="task pin" href="https://www.curseforge.com/minecraft/mc-mods/minecraft-backrooms-update" target="_blank" rel="noopener" aria-label="Download The Backrooms Update" data-tip="Download The Backrooms Update"><img class="px" src="assets/icons/memarium_pickaxe.png" alt="" width="22" height="22"></a>
+<button class="task app" type="button" aria-label="Remembering Explorer"><img src="assets/b-logo.png" alt="" width="24" height="24"></button>
+<div class="tray"><button class="speaker" type="button" aria-label="Room tone" aria-pressed="false" data-tip="Room tone"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7h3l5-4v14l-5-4H3z" fill="#fff"/><path class="waves" d="M13.5 7a4 4 0 0 1 0 6M15.5 4.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="#fff" stroke-width="1.6"/><path class="mute" d="M13 7l5 6M18 7l-5 6" stroke="#fff" stroke-width="1.6"/></svg></button>
+<button class="clock" type="button" aria-label="Date and time"><span id="clock">12:00 PM</span><span id="date">11/2/2026</span></button>
+<button class="showdesk" type="button" aria-label="Show desktop" data-tip="Show desktop"></button></div>
+</div>
+</div>
+<script src="assets/site.js?v=202611021413" defer></script>
 </body>
 </html>

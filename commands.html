@@ -9,29 +9,26 @@
 <meta property="og:title" content="Commands - The Backrooms Update Wiki">
 <meta property="og:description" content="Every /backrooms command in The Backrooms Update, which ones anyone can use and which are op-only.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/shots/hero-pillars.jpg">
+<meta property="og:image" content="assets/shots/rem-high-floors.jpg">
 <link rel="icon" type="image/png" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css">
-<script>try{if(sessionStorage.getItem("booted")!=="1"&&!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.className+=" booting"}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap">
+<link rel="stylesheet" href="assets/style.css?v=202611021413">
+<script>(function(){var d=document.documentElement;try{if(sessionStorage.getItem("booted")!=="1"&&!matchMedia("(prefers-reduced-motion: reduce)").matches)d.classList.add("booting");if(localStorage.getItem("maxed")==="1")d.classList.add("win-max");var g=JSON.parse(sessionStorage.getItem("wingeo")||"null");if(g&&g.w>200&&g.h>200){d.classList.add("win-placed");d.style.setProperty("--wx",g.x+"px");d.style.setProperty("--wy",g.y+"px");d.style.setProperty("--ww",g.w+"px");d.style.setProperty("--wh",g.h+"px");}var w=localStorage.getItem("wall");if(w&&/^assets\/shots\/[a-z0-9-]+\.jpg$/.test(w))d.style.setProperty("--wall","url(\""+w+"\")");}catch(e){}})();</script>
 
 </head>
 <body>
 <a class="skip" href="#main">Skip to the page</a>
-<div class="desktop">
-<div class="icons" aria-hidden="true">
-<a class="dicon" href="index.html" tabindex="-1"><img src="assets/b-logo.png" alt="" width="48" height="48"><span>The Backrooms Update</span></a>
-<a class="dicon" href="the-remembering.html" tabindex="-1"><img class="px" src="assets/icons/settled_lamp_on.png" alt="" width="48" height="48"><span>the_remembering.lnk</span></a>
-<a class="dicon" href="keeper.html" tabindex="-1"><img class="px" src="assets/icons/settled_heart.png" alt="" width="48" height="48"><span>DONT_LOOK.txt</span></a>
-<a class="dicon" href="crafting.html" tabindex="-1"><img class="px" src="assets/icons/memarium_ingot.png" alt="" width="48" height="48"><span>recipes</span></a>
-</div>
-<div class="window">
-<div class="titlebar"><img src="assets/b-logo.png" alt="" width="16" height="16"><span class="wtitle">Commands - The Backrooms Update Wiki - Remembering Explorer</span>
-<span class="caption" aria-hidden="true"><span class="cb min"></span><span class="cb max"></span><span class="cb close" title="Close"></span></span></div>
-<div class="navbar"><button class="nav-back" type="button" aria-label="Back" onclick="history.back()"></button><button class="nav-fwd" type="button" aria-label="Forward" onclick="history.forward()"></button>
-<div class="address"><img src="assets/b-logo.png" alt="" width="16" height="16"><span id="address">http://www.thebackroomsupdate.net/commands.html</span></div>
-<span class="reload" aria-hidden="true"></span></div>
-<div class="tabstrip" aria-hidden="true"><span class="tab"><img src="assets/b-logo.png" alt="" width="16" height="16">Commands - The Backrooms Update Wiki</span><span class="tab new"></span></div>
+<div class="desktop" id="desktop">
+<ul class="icons" aria-label="Desktop"><li><a class="dicon" href="index.html"><img src="assets/b-logo.png" alt="" width="48" height="48"><span>The Backrooms Update</span></a></li><li><a class="dicon" href="the-remembering.html"><img class="px" src="assets/icons/settled_lamp_on.png" alt="" width="48" height="48"><span>The Remembering</span></a></li><li><a class="dicon" href="keeper.html"><img class="px" src="assets/icons/settled_heart.png" alt="" width="48" height="48"><span>DONT_LOOK.txt</span></a></li><li><a class="dicon" href="crafting.html"><img class="px" src="assets/icons/memarium_ingot.png" alt="" width="48" height="48"><span>Recipes</span></a></li><li><a class="dicon" href="buried-works.html"><img class="px" src="assets/icons/map_buried_works.png" alt="" width="48" height="48"><span>Buried Works</span></a></li></ul>
+<div class="window" id="win">
+<div class="titlebar" id="titlebar"><img class="ticon" src="assets/b-logo.png" alt="" width="16" height="16"><span class="wtitle">Commands - The Backrooms Update Wiki - Remembering Explorer</span>
+<span class="caption"><button class="cb min" type="button" aria-label="Minimize" data-tip="Minimize"></button><button class="cb max" type="button" aria-label="Maximize" data-tip="Maximize"></button><button class="cb close" type="button" aria-label="Close" data-tip="Close"></button></span></div>
+<div class="navbar"><button class="nav-back" type="button" aria-label="Back" data-tip="Back"></button><button class="nav-fwd" type="button" aria-label="Forward" data-tip="Forward"></button>
+<form class="address" action="index.html"><img src="assets/b-logo.png" alt="" width="16" height="16"><input id="address" name="go" value="http://www.thebackroomsupdate.net/commands.html" aria-label="Address" spellcheck="false" autocomplete="off"><button class="go" type="submit" aria-label="Go to" data-tip="Go to">&#8594;</button></form><button class="reload" type="button" aria-label="Refresh" data-tip="Refresh (F5)"></button></div>
+<div class="tabstrip"><span class="tab"><img src="assets/b-logo.png" alt="" width="16" height="16"><span class="tab-t">Commands - The Backrooms Update Wiki</span><button class="tab-x" type="button" aria-label="Close tab" data-tip="Close Tab"></button></span><a class="tab new" href="index.html" target="_blank" rel="noopener" aria-label="New tab" data-tip="New Tab (Ctrl+T)"></a></div>
 <div class="viewport" id="viewport">
 <div id="toppanel"><div class="in">
 <a id="logo" href="index.html"><img src="assets/logo.png" alt="The Backrooms Update" width="720" height="148"></a>
@@ -66,10 +63,34 @@
 <p>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft. An unofficial fan retelling inspired by Kane Parsons' Backrooms, not affiliated with Kane Parsons or A24.</p>
 </div>
 </div>
-<div class="statusbar" aria-hidden="true"><span>Done</span><span class="zone">Internet | Protected Mode: Off</span><span>100%</span></div>
+<div class="statusbar"><span class="status" id="status">Done</span><span class="progress" hidden><span></span></span><span class="zone">Internet | Protected Mode: Off</span><span class="zoom">100%</span><span class="grip" aria-hidden="true"></span></div>
+<span class="rs rs-e" aria-hidden="true"></span><span class="rs rs-s" aria-hidden="true"></span><span class="rs rs-se" aria-hidden="true"></span>
 </div>
-<div class="taskbar"><span class="orb" aria-hidden="true"></span><span class="task active"><img src="assets/b-logo.png" alt="" width="22" height="22"></span><span class="task"><img class="px" src="assets/icons/memarium_pickaxe.png" alt="" width="20" height="20"></span><button class="speaker" type="button" aria-label="Room tone on or off" aria-pressed="false" title="Room tone"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7h3l5-4v14l-5-4H3z" fill="#fff"/><path class="waves" d="M13.5 7a4 4 0 0 1 0 6M15.5 4.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="#fff" stroke-width="1.6"/><path class="mute" d="M13 7l5 6M18 7l-5 6" stroke="#fff" stroke-width="1.6"/></svg></button><span class="tray"><span id="clock">3:00 AM</span><span id="date">11/2/2026</span></span></div>
+<div class="snap" aria-hidden="true"></div>
+<button class="reopen" type="button">Remembering Explorer is closed.<br>Double-click <b>The Backrooms Update</b> on the desktop, or click here, to open it again.</button>
+<div class="startmenu" id="startmenu" hidden>
+<div class="sm-left"><ul class="sm-programs"><li class="sm-head">Start</li><li><a href="index.html"><img class="px" src="assets/icons/memarium_ingot.png" alt="" width="16" height="16">Home</a></li><li><a href="getting-in.html"><img class="px" src="assets/icons/gateway.png" alt="" width="16" height="16">Getting In</a></li><li class="sm-head">The dimension</li><li><a href="the-remembering.html"><img class="px" src="assets/icons/settled_lamp_on.png" alt="" width="16" height="16">The Remembering</a></li><li><a href="rules.html"><img class="px" src="assets/icons/memarium_pickaxe.png" alt="" width="16" height="16">Rules of the dimension</a></li><li><a href="insanity.html"><img class="px" src="assets/icons/insanity.png" alt="" width="16" height="16">Insanity</a></li><li><a href="refuges.html"><img class="px" src="assets/icons/memento.png" alt="" width="16" height="16">Refuges</a></li><li class="sm-head">What lives there</li><li><a href="mobs.html"><img class="px" src="assets/icons/settled_lichen.png" alt="" width="16" height="16">Mobs</a></li><li><a href="keeper.html"><img class="px" src="assets/icons/settled_heart.png" alt="" width="16" height="16">The Keeper</a></li><li><a href="buried-works.html"><img class="px" src="assets/icons/map_buried_works.png" alt="" width="16" height="16">Buried Works</a></li><li class="sm-head">Reference</li><li><a href="items.html"><img class="px" src="assets/icons/snapshot.png" alt="" width="16" height="16">Items and blocks</a></li><li><a href="crafting.html"><img class="px" src="assets/icons/remembered_upgrade_smithing_template.png" alt="" width="16" height="16">Crafting</a></li><li><a href="config.html"><span class="nav-dot" aria-hidden="true"></span>Config</a></li><li><a href="commands.html"><span class="nav-dot" aria-hidden="true"></span>Commands</a></li><li><a href="faq.html"><span class="nav-dot" aria-hidden="true"></span>FAQ and compatibility</a></li></ul><div class="sm-results" hidden></div>
+<div class="sm-search"><input id="sm-search" type="search" placeholder="Search the wiki" aria-label="Search the wiki" autocomplete="off"></div></div>
+<div class="sm-right"><img class="sm-user" src="assets/b-logo.png" alt="" width="48" height="48">
+<a href="index.html">The Backrooms Update</a><a href="getting-in.html">Getting In</a><a href="items.html">Items and blocks</a><a href="crafting.html">Crafting</a><a href="faq.html">FAQ</a>
+<span class="sm-sep"></span><a href="https://www.curseforge.com/minecraft/mc-mods/minecraft-backrooms-update" target="_blank" rel="noopener">Download</a><a href="https://github.com/maxwellcommer-hub/backrooms-wiki" target="_blank" rel="noopener">Wiki source</a>
+<div class="sm-power"><button class="shutdown" type="button">Shut down</button><button class="sm-more" type="button" aria-label="More power options" aria-expanded="false" data-tip="More options"></button>
+<div class="sm-powermenu" hidden><button type="button" data-power="restart">Restart</button><button type="button" data-power="shutdown">Shut down</button></div></div></div>
 </div>
-<script src="assets/site.js" defer></script>
+<div class="ctxmenu" id="ctxmenu" hidden><button type="button" data-cmd="refresh">Refresh</button><button type="button" data-cmd="wallpaper">Next desktop background</button><span class="cm-sep"></span><button type="button" data-cmd="open">Open Remembering Explorer</button><button type="button" data-cmd="desktop">Show desktop</button></div>
+<div class="flyout cal" id="calendar" hidden></div>
+<div class="flyout volfly" id="volume" hidden><span class="vol-label">Room tone</span><input class="vol-range" type="range" min="0" max="100" value="25" aria-label="Room tone volume" orient="vertical"><button class="vol-mute" type="button" aria-label="Mute" data-tip="Mute"></button></div>
+<div class="peek" id="peek" hidden></div>
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<div class="taskbar" id="taskbar">
+<button class="orb" type="button" aria-label="Start" aria-expanded="false" aria-controls="startmenu" data-tip="Start"></button>
+<a class="task pin" href="https://www.curseforge.com/minecraft/mc-mods/minecraft-backrooms-update" target="_blank" rel="noopener" aria-label="Download The Backrooms Update" data-tip="Download The Backrooms Update"><img class="px" src="assets/icons/memarium_pickaxe.png" alt="" width="22" height="22"></a>
+<button class="task app" type="button" aria-label="Remembering Explorer"><img src="assets/b-logo.png" alt="" width="24" height="24"></button>
+<div class="tray"><button class="speaker" type="button" aria-label="Room tone" aria-pressed="false" data-tip="Room tone"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 7h3l5-4v14l-5-4H3z" fill="#fff"/><path class="waves" d="M13.5 7a4 4 0 0 1 0 6M15.5 4.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="#fff" stroke-width="1.6"/><path class="mute" d="M13 7l5 6M18 7l-5 6" stroke="#fff" stroke-width="1.6"/></svg></button>
+<button class="clock" type="button" aria-label="Date and time"><span id="clock">12:00 PM</span><span id="date">11/2/2026</span></button>
+<button class="showdesk" type="button" aria-label="Show desktop" data-tip="Show desktop"></button></div>
+</div>
+</div>
+<script src="assets/site.js?v=202611021413" defer></script>
 </body>
 </html>
