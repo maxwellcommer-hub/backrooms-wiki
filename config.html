@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Config - The Backrooms Update Wiki</title>
+<meta name="description" content="Every option of The Backrooms Update&#x27;s server and client config files, with defaults and what each one does.">
+<meta name="theme-color" content="#0e0c08">
+<meta property="og:title" content="Config - The Backrooms Update Wiki">
+<meta property="og:description" content="Every option of The Backrooms Update&#x27;s server and client config files, with defaults and what each one does.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/shots/hero-pillars.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e0c08'/%3E%3Crect x='5' y='8' width='22' height='16' fill='%23fff4c2' stroke='%23e6c65c' stroke-width='2'/%3E%3Cpath d='M5 16h22M16 8v16' stroke='%23c9a23e' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the page</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="3" fill="#1b170f" stroke="#5a4b26"/><rect x="6" y="9" width="20" height="14" fill="#fff4c2"/><path d="M6 16h20M16 9v14" stroke="#c9a23e" stroke-width="2"/><rect x="6" y="9" width="20" height="14" fill="none" stroke="#e6c65c" stroke-width="1.5"/><rect x="4" y="25" width="24" height="2" fill="#e6c65c" opacity=".35"/></svg></span><span class="brand-text"><strong>The Backrooms Update</strong><span>Wiki for 3.0.0</span></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sidebar"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Menu</button>
+</header>
+<div class="layout">
+<nav class="sidebar" id="sidebar" aria-label="Wiki pages">
+  <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="3" fill="#1b170f" stroke="#5a4b26"/><rect x="6" y="9" width="20" height="14" fill="#fff4c2"/><path d="M6 16h20M16 9v14" stroke="#c9a23e" stroke-width="2"/><rect x="6" y="9" width="20" height="14" fill="none" stroke="#e6c65c" stroke-width="1.5"/><rect x="4" y="25" width="24" height="2" fill="#e6c65c" opacity=".35"/></svg></span><span class="brand-text"><strong>The Backrooms Update</strong><span>Wiki for 3.0.0</span></span></a>
+  <div class="search" role="search">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <input id="search-input" type="search" placeholder="Search the wiki  ( / )" aria-label="Search the wiki" autocomplete="off">
+    <div class="search-results" id="search-results" hidden></div>
+  </div>
+  <div class="nav-group"><h2>Start</h2><ul><li><a href="index.html"><img class="px" src="assets/icons/memarium_ingot.png" alt="" width="16" height="16">Home</a></li><li><a href="getting-in.html"><img class="px" src="assets/icons/gateway.png" alt="" width="16" height="16">Getting In</a></li></ul></div><div class="nav-group"><h2>The dimension</h2><ul><li><a href="the-remembering.html"><img class="px" src="assets/icons/settled_lamp_on.png" alt="" width="16" height="16">The Remembering</a></li><li><a href="rules.html"><img class="px" src="assets/icons/memarium_pickaxe.png" alt="" width="16" height="16">Rules of the dimension</a></li><li><a href="insanity.html"><img class="px" src="assets/icons/insanity.png" alt="" width="16" height="16">Insanity</a></li><li><a href="refuges.html"><img class="px" src="assets/icons/memento.png" alt="" width="16" height="16">Refuges</a></li></ul></div><div class="nav-group"><h2>What lives there</h2><ul><li><a href="mobs.html"><img class="px" src="assets/icons/settled_lichen.png" alt="" width="16" height="16">Mobs</a></li><li><a href="keeper.html"><img class="px" src="assets/icons/settled_heart.png" alt="" width="16" height="16">The Keeper</a></li><li><a href="buried-works.html"><img class="px" src="assets/icons/map_buried_works.png" alt="" width="16" height="16">Buried Works</a></li></ul></div><div class="nav-group"><h2>Reference</h2><ul><li><a href="items.html"><img class="px" src="assets/icons/snapshot.png" alt="" width="16" height="16">Items and blocks</a></li><li><a href="crafting.html"><img class="px" src="assets/icons/remembered_upgrade_smithing_template.png" alt="" width="16" height="16">Crafting</a></li><li><a href="config.html" aria-current="page"><span class="nav-dot" aria-hidden="true"></span>Config</a></li><li><a href="commands.html"><span class="nav-dot" aria-hidden="true"></span>Commands</a></li><li><a href="faq.html"><span class="nav-dot" aria-hidden="true"></span>FAQ and compatibility</a></li></ul></div>
+  <p class="sidebar-foot">For The Backrooms Update 3.0.0 on Minecraft 1.21.1 (NeoForge). <a href="https://www.curseforge.com/minecraft/search?search=The%20Backrooms%20Update">Get it on CurseForge</a>.</p>
+</nav>
+<div class="content">
+<div class="page">
+<article id="main">
+<p class="eyebrow">Reference</p><h1>Config</h1><p class="lead">Two small TOML files. The server one switches or tunes thin spots, build copying, the Keeper, Still Lifes, insanity and the leave cooldown.</p>
+
+<h2 id="server-config">Server config<a class="anchor" href="#server-config" aria-label="Link to this section">#</a></h2>
+<p>The server config is <code>backrooms-server.toml</code>. NeoForge writes it into the <code>config</code> folder of the game directory (on a dedicated server, the server folder) the first time the mod loads. Changes apply as soon as the file is saved; the few that only touch new chunks or new worlds say so. Every default is the intended experience.</p>
+<div class="table-wrap"><table><thead><tr><th>Key</th><th>Default</th><th>What it does</th></tr></thead><tbody><tr><td><code>thinSpots.enabled</code></td><td><code>true</code></td><td>Thin spots open at all. Off: no new ones open; ones already open stay.</td></tr><tr><td><code>thinSpots.afterFirstDoor</code></td><td><code>true</code></td><td>Thin spots only start after the first door in the world has been opened.</td></tr><tr><td><code>thinSpots.chancePerChunk</code></td><td><code>0.02</code></td><td>Chance (0 to 1) that a chunk gets a thin spot, rolled once when the chunk first loads. Only new chunks roll. Try 0.005 on busy servers.</td></tr><tr><td><code>remembering.copyBuilds</code></td><td><code>true</code></td><td>The Remembering copies what players build and break in the overworld, a little wrong, when nobody is looking.</td></tr><tr><td><code>remembering.memariumDropMultiplier</code></td><td><code>1.0</code></td><td>How often a Memarium tool gets a drop out of a block it breaks in The Remembering (0 to 1000). Each block has a base chance by value (dirt 1 in 5, diamond block 1 in 1000); this multiplies it. 0 turns drops off, 10 makes everything ten times as likely (up to certain).</td></tr><tr><td><code>remembering.middleLevels</code></td><td><code>["geometric:768:192"]</code></td><td>The plan of the levels under the End floors, as "kind:height:floor" entries. Only the <code>geometric</code> kind exists. The last level is stretched or cut to fill the space, and a world keeps the plan it first generated with, so this only affects new worlds. Leave it alone.</td></tr><tr><td><code>remembering.viewDistance</code></td><td><code>8</code></td><td>How many chunks are sent to a player inside The Remembering at most (0 to 32; 0 uses the server's own view distance). The fog hides everything past 6 chunks and every chunk there is a 1392-block column, so 8 keeps multiplayer light.</td></tr><tr><td><code>keeper.enabled</code></td><td><code>true</code></td><td>The Keeper hunts in The Remembering.</td></tr><tr><td><code>keeper.quietMinutes</code></td><td><code>40</code></td><td>How long the Keeper stays away after he is beaten, in minutes (1 to 1440). Also the default for <code>/backrooms quiet</code>.</td></tr><tr><td><code>stillLifes.enabled</code></td><td><code>true</code></td><td>Still Lifes (copies of players) appear in The Remembering.</td></tr><tr><td><code>insanity.enabled</code></td><td><code>true</code></td><td>The insanity meter rises in The Remembering.</td></tr><tr><td><code>commands.leaveCooldownSeconds</code></td><td><code>600</code></td><td>Cooldown of <code>/backrooms leave</code>, in seconds (0 to 86400). Ops have none.</td></tr></tbody></table></div>
+<div class="callout tip"><p class="callout-title">If your players spend more time inside than out</p><p>Start with the thin spots:</p><pre><code>[thinSpots]
+    chancePerChunk = 0.005   # default 0.02</code></pre></div>
+
+<h2 id="client-config">Client config<a class="anchor" href="#client-config" aria-label="Link to this section">#</a></h2>
+<p><code>backrooms-client.toml</code> in the <code>config</code> folder. Each player sets their own.</p>
+<div class="table-wrap"><table><thead><tr><th>Key</th><th>Default</th><th>What it does</th></tr></thead><tbody><tr><td><code>ambience</code></td><td><code>true</code></td><td>The Remembering's room tone and distant sounds.</td></tr><tr><td><code>ambienceVolume</code></td><td><code>1.0</code></td><td>Volume of that ambience, 0 to 1.</td></tr><tr><td><code>insanityOverlay</code></td><td><code>true</code></td><td>The dark veins at the screen edge as insanity rises.</td></tr></tbody></table></div>
+
+<h2 id="config-screen">In game<a class="anchor" href="#config-screen" aria-label="Link to this section">#</a></h2>
+<p>You can change the same settings in game. On the title screen open <strong>Mods</strong>, pick <strong>The Backrooms Update</strong> and press <strong>Config</strong>. The Mods list also shows the mod's description and a link to this wiki.</p>
+<p>The screen has two pages: <strong>World Settings</strong> (the server file) and <strong>Your Settings</strong> (the client file). On World Settings each section, Thin Spots, The Remembering, The Keeper, Still Lifes, Insanity and Commands, opens with <strong>Edit</strong>. Every setting has a plain name, and holding the mouse over it says what it does. <strong>Undo</strong> and <strong>Reset</strong> are at the bottom.</p>
+<figure class="shot"><img src="assets/shots/config-mods-list.jpg" alt="The Mods list with The Backrooms Update picked: the description, the wiki link and the Config button." width="1280" height="720" loading="lazy" decoding="async"><figcaption>The Mods list with The Backrooms Update picked: the description, the wiki link and the Config button.</figcaption></figure>
+<div class="table-wrap"><table><thead><tr><th>Name on the screen</th><th>Key in the file</th></tr></thead><tbody><tr><td colspan="2"><strong>World Settings</strong></td></tr><tr><td>Thin Spots Open</td><td><code>thinSpots.enabled</code></td></tr><tr><td>Wait for the First Door</td><td><code>thinSpots.afterFirstDoor</code></td></tr><tr><td>Chance per Chunk</td><td><code>thinSpots.chancePerChunk</code></td></tr><tr><td>Copy Player Builds</td><td><code>remembering.copyBuilds</code></td></tr><tr><td>Memarium Drop Multiplier</td><td><code>remembering.memariumDropMultiplier</code></td></tr><tr><td>Middle Levels</td><td><code>remembering.middleLevels</code></td></tr><tr><td>View Distance Inside</td><td><code>remembering.viewDistance</code></td></tr><tr><td>The Keeper Hunts</td><td><code>keeper.enabled</code></td></tr><tr><td>Quiet After a Defeat (minutes)</td><td><code>keeper.quietMinutes</code></td></tr><tr><td>Still Lifes Appear</td><td><code>stillLifes.enabled</code></td></tr><tr><td>Insanity Rises</td><td><code>insanity.enabled</code></td></tr><tr><td>Leave Cooldown (seconds)</td><td><code>commands.leaveCooldownSeconds</code></td></tr><tr><td colspan="2"><strong>Your Settings</strong></td></tr><tr><td>Ambience</td><td><code>ambience</code></td></tr><tr><td>Ambience Volume</td><td><code>ambienceVolume</code></td></tr><tr><td>Insanity Veins</td><td><code>insanityOverlay</code></td></tr></tbody></table></div>
+<p>Both files open with a Backrooms banner and a link to this wiki, and every section and setting has a short note in plain words. Delete a file to get every default back.</p>
+
+<nav class="pager" aria-label="Previous and next page"><a class="prev" href="crafting.html"><span>Previous</span><strong>Crafting</strong></a><a class="next" href="commands.html"><span>Next</span><strong>Commands</strong></a></nav>
+</article>
+
+</div>
+<footer class="site-footer"><div class="inner">
+  <p>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft. An unofficial fan retelling inspired by Kane Parsons' Backrooms, not affiliated with Kane Parsons or A24. The Backrooms Update is made by MC_CREATIONS.</p>
+  <nav aria-label="Elsewhere"><a href="https://www.curseforge.com/minecraft/search?search=The%20Backrooms%20Update">CurseForge</a><a href="https://github.com/maxwellcommer-hub/backrooms-wiki">Wiki source on GitHub</a></nav>
+</div></footer>
+</div>
+</div>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
